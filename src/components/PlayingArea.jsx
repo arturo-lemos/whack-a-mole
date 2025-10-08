@@ -3,6 +3,7 @@ import { useGame } from "../context/GameContext";
 import Timer from "./Timer";
 import Hole from "./Hole";
 
+//PlayingArea function has all the props that it needs to run, this makes sense. It also passes the Timer.jsx to App.jsx.
 export default function PlayingArea() {
   const { score, timeLeft, activeHole, whackMole, restartGame, endGame } =
     useGame();

@@ -1,11 +1,10 @@
-// src/components/Timer.jsx
 import React from "react";
 import { useGame } from "../context/GameContext";
 
+//When time left is less than 5 the time changes to red, other black, ternary.
 export default function Timer() {
   const { timeLeft } = useGame();
 
-  // Optional: visual color change when time is low
   const timerStyle = {
     color: timeLeft <= 5 ? "red" : "black",
     fontWeight: "bold",

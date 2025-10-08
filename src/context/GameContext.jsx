@@ -1,5 +1,7 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 
+// I am not sure what useEffect is for but I see it will be discussed today. The GameContext is by far the longest Component. I can follow the logic and see how it tells the computer what to do, step by step.
+
 const GameContext = createContext();
 
 export const GameProvider = ({ children }) => {
